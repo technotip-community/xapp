@@ -24,7 +24,7 @@
         "ITSAppUsesNonExemptEncryption": false,
         "electronTeamId": "LK5BBJNJZ6"
       },
-      "bundleVersion": "24",
+      "bundleVersion": "25",
       "provisioningProfile": "xAppBuilder_New_Distribution.provisionprofile",
       "entitlements": "entitlement/entitlements.mac.plist",
       "hardenedRuntime": true,
@@ -44,9 +44,7 @@
       "entitlements": "entitlement/entitlements.mas.plist",
       "entitlementsInherit": "entitlement/entitlements.mas.inherit.plist",
       "entitlementsLoginHelper": "entitlement/entitlements.mas.loginhelper.plist",
-      "hardenedRuntime": false,
-      "gatekeeperAssess": false,
-      "mergeASARs": false
+      "hardenedRuntime": false
     }
   },
   "keywords": [
