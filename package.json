@@ -15,7 +15,6 @@
     "copyright": "XRPL Labs",
     "buildVersion": "2",
     "mac": {
-      "type": "distribution",
       "artifactName": "${name}-mac-${arch}-${version}.${ext}",
       "electronLanguages": [
         "en"
@@ -25,10 +24,11 @@
         "electronTeamId": "LK5BBJNJZ6"
       },
       "bundleVersion": "25",
-      "provisioningProfile": "xAppBuilder_New_Distribution.provisionprofile",
+      "provisioningProfile": "xAppBuilder_Development.provisionprofile",
       "entitlements": "entitlement/entitlements.mac.plist",
       "hardenedRuntime": true,
       "gatekeeperAssess": false,
+      "identity": null,
       "target": [
         {
           "target": "mas",
@@ -37,10 +37,9 @@
       ]
     },
     "mas": {
-      "type": "distribution",
       "category": "public.app-category.developer-tools",
       "icon": "build/icon.icns",
-      "provisioningProfile": "xAppBuilder_New_Distribution.provisionprofile",
+      "provisioningProfile": "xAppBuilder_Development.provisionprofile",
       "entitlements": "entitlement/entitlements.mas.plist",
       "entitlementsInherit": "entitlement/entitlements.mas.inherit.plist",
       "entitlementsLoginHelper": "entitlement/entitlements.mas.loginhelper.plist",
