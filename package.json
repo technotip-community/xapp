@@ -24,7 +24,7 @@
         "electronTeamId": "LK5BBJNJZ6"
       },
       "bundleVersion": "25",
-      "provisioningProfile": "xAppBuilder_Development.provisionprofile",
+      "provisioningProfile": "xAppBuilder_New_Distribution",
       "entitlements": "entitlement/entitlements.mac.plist",
       "hardenedRuntime": true,
       "gatekeeperAssess": false,
@@ -39,7 +39,7 @@
     "mas": {
       "category": "public.app-category.developer-tools",
       "icon": "build/icon.icns",
-      "provisioningProfile": "xAppBuilder_Development.provisionprofile",
+      "provisioningProfile": "xAppBuilder_New_Distribution.provisionprofile",
       "entitlements": "entitlement/entitlements.mas.plist",
       "entitlementsInherit": "entitlement/entitlements.mas.inherit.plist",
       "entitlementsLoginHelper": "entitlement/entitlements.mas.loginhelper.plist",
