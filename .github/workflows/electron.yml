@@ -25,6 +25,7 @@ jobs:
       with:
         mac_certs: ${{ secrets.MAC_CERTS }}
         mac_certs_password: ${{ secrets.CSC_KEY_PASSWORD }}
+        github_token: false
 
 
     - name: Upload artifacts
