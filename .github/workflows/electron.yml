@@ -18,17 +18,16 @@ jobs:
         node-version: 18.16
 
     - name: Install dependencies
+      run:  npm install
+
+    - name: Build on MacOS
+      env:
+          CSC_LINK: ${{ secrets.MAC_CERTS }}
+          CSC_KEY_PASSWORD: ${{ secrets.CSC_KEY_PASSWORD }}
       run: |
             export DEBUG=electron*
-            npm install
-
-    - name: Build/release Electron app
-      uses: samuelmeuli/action-electron-builder@v1
-      with:
-        mac_certs: ${{ secrets.MAC_CERTS }}
-        mac_certs_password: ${{ secrets.CSC_KEY_PASSWORD }}
-        github_token: ${{ secrets.github_token }}
-        release: false
+            security find-identity -v
+            npm run build
 
 
     - name: Upload artifacts
