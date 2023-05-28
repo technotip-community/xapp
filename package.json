@@ -24,7 +24,7 @@
         "electronTeamId": "LK5BBJNJZ6"
       },
       "bundleVersion": "25",
-      "provisioningProfile": "xAppBuilder_New_Distribution",
+      "provisioningProfile": "xAppBuilder_New_Distribution.provisionprofile",
       "entitlements": "entitlement/entitlements.mac.plist",
       "hardenedRuntime": true,
       "gatekeeperAssess": false,
