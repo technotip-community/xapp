@@ -28,7 +28,7 @@
       "entitlements": "entitlement/entitlements.mac.plist",
       "hardenedRuntime": true,
       "gatekeeperAssess": false,
-      "identity": null,
+      "asarUnpack": "**/*.node",
       "target": [
         {
           "target": "mas",
