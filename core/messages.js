@@ -43,7 +43,9 @@ ipcMain.on("getActiveApp", (e, args) => {
 });
 
 ipcMain.on("openExternal", (e, url) => {
-  shell.openExternal(url);
+  shell.openExternal(
+    url.replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">")
+  );
 });
 
 ipcMain.on("tx", async (e, txHash) => {
