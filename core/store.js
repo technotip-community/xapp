@@ -83,7 +83,7 @@ const getActiveAppOtt = async () => {
     return activeApp;
   }
   const xappUUID = JSON.parse(activeApp);
-
+  //console.log("ott ", ott);
   if (ott) {
     if (ott[0].app === xappUUID.uuid) return ott;
   }

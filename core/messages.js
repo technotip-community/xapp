@@ -17,7 +17,7 @@ ipcMain.on("uuid", (e, args) => {
   const uuid4 = crypto.randomUUID();
   // uuid4   ,
   toDataURL(
-    `https://xumm.app/detect/xapp:sandbox.6d7a36978f3a/qr?handshake=${uuid4}`,
+    `https://xumm.app/detect/xapp:xumm.xappbuilder/qr?handshake=${uuid4}`,
     {}
   ).then((data) => {
     e.sender.send("bearerQR", { uuid4, data });
