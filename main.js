@@ -1,5 +1,5 @@
 const { app, BrowserWindow, ipcMain, Tray, TouchBar } = require("electron");
-//const fs = require("fs");
+const fs = require("fs");
 const path = require("path");
 const {
   setBearer,
@@ -113,7 +113,7 @@ ipcMain.on("title", (e, title) => {
 });
 
 app.whenReady().then(() => {
-  //selectConsole();
+  selectConsole();
 
   workRendererFunction();
   // app.setAsDefaultProtocolClient("xappbuilder");
@@ -176,9 +176,8 @@ ipcMain.on("logout", (e, args) => {
 ipcMain.on("devTool-open", (e, args) => {
   workRenderer.webContents.openDevTools();
 });
-/*
-const selectConsole = () => {
 
+const selectConsole = () => {
   try {
     const userDataPath = app.getPath("userData");
     console.log("userDataPath ", userDataPath);
@@ -210,6 +209,4 @@ const selectConsole = () => {
   } catch (err) {
     console.log("err ", err);
   }
- 
 };
- */

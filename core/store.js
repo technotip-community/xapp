@@ -84,8 +84,8 @@ const getActiveAppOtt = async () => {
   }
   const xappUUID = JSON.parse(activeApp);
   //console.log("ott ", ott);
-  if (ott) {
-    if (ott[0].app === xappUUID.uuid) return ott;
+  if (ott !== undefined) {
+    if (ott[0]?.app === xappUUID?.uuid) return ott;
   }
 
   const bearer = getBearer();
